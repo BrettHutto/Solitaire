@@ -2,9 +2,143 @@ body {
 	background-color: seagreen;
 }
 
-.PileSpot {
+.PickSpot {
+	width: 100px
+}
+
+.PickDownSpot {
     border: 2px ridge white;
 	border-radius: 5px;
 	width: 100px;
 	height: 157px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
+.PickUpSpot {
+    border: 2px ridge white;
+	border-radius: 5px;
+	width: 100px;
+	height: 157px;
+	position: absolute;
+	top: 10px;
+	left: 140px;
+}
+
+.SortSpots{
+}
+
+.SortSpadesSpot {
+    border: 2px ridge white;
+	border-radius: 5px;
+	width: 100px;
+	height: 157px;
+	position: absolute;
+	top: 10px;
+	left: 500px;
+}
+
+.SortClubsSpot {
+    border: 2px ridge white;
+	border-radius: 5px;
+	width: 100px;
+	height: 157px;
+	position: absolute;
+	top: 10px;
+	left: 640px;
+}
+
+.SortDiamondsSpot {
+    border: 2px ridge white;
+	border-radius: 5px;
+	width: 100px;
+	height: 157px;
+	position: absolute;
+	top: 10px;
+	left: 780px;
+}
+
+.SortHeartsSpot {
+    border: 2px ridge white;
+	border-radius: 5px;
+	width: 100px;
+	height: 157px;
+	position: absolute;
+	top: 10px;
+	left: 920px;
+}
+
+.LaneSpots{
+	
+}
+
+.Lane1Spot {
+    border: 2px ridge white;
+	border-radius: 5px;
+	width: 100px;
+	height: 157px;
+	position: absolute;
+	bottom: 300px;
+	left: 10px;
+}
+
+.Lane2Spot {
+    border: 2px ridge white;
+	border-radius: 5px;
+	width: 100px;
+	height: 157px;
+	position: absolute;
+	bottom: 300px;
+	left: 160px;
+}
+
+.Lane3Spot {
+    border: 2px ridge white;
+	border-radius: 5px;
+	width: 100px;
+	height: 157px;
+	position: absolute;
+	bottom: 300px;
+	left: 310px;
+}
+
+.Lane4Spot {
+    border: 2px ridge white;
+	border-radius: 5px;
+	width: 100px;
+	height: 157px;
+	position: absolute;
+	bottom: 300px;
+	left: 460px;
+}
+
+.Lane5Spot {
+    border: 2px ridge white;
+	border-radius: 5px;
+	width: 100px;
+	height: 157px;
+	position: absolute;
+	bottom: 300px;
+	left: 610px;
+}
+
+.Lane6Spot {
+    border: 2px ridge white;
+	border-radius: 5px;
+	width: 100px;
+	height: 157px;
+	position: absolute;
+	bottom: 300px;
+	left: 760px;
+}
+
+.Lane7Spot {
+    border: 2px ridge white;
+	border-radius: 5px;
+	width: 100px;
+	height: 157px;
+	position: absolute;
+	bottom: 300px;
+	left: 910px;
 }
