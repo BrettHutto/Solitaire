@@ -1,10 +1,10 @@
-/* UPDATE THIS COMMENT AFTER EDITING. Last Edit: 6/5/2021
+/* UPDATE THIS COMMENT AFTER EDITING. Last Edit: 6/18/2021
 This is where all classes/objects are defined. It includes the Card class, LanePile class (for 
 the areas to place cards), PickPile class (for the top left group of cards), and SortedPile 
 class (for sorting the cards by rank and suit).  Also includes a deck that is an array. */
 
 
-class Card {
+export class Card {
 	constructor(rank, suit) {
 		this._faceUp = false; // down = false, up = true
 		this._rank = rank;
@@ -41,9 +41,18 @@ class Card {
 	flipCard() {
 		this._faceUp = !this._faceUp;
 	}
+	
+	display(pile) {
+		if (this._faceUp) {
+			// show color, rank, and suit
+		}
+		else {
+			// show the face down position
+		}
+	}
 }
 
-class LanePile {
+export class LanePile {
 	constructor(cards) { // array of cards taken out of the deck
 		this._upCards = [];
 		this._downCards = cards;
@@ -77,9 +86,13 @@ class LanePile {
 
 		return card;
 	}
+	
+	display(lanePileNum) {
+		// use the lanePileNum to show what we already have in css, just use a loop in game.js
+	}
 }
 
-class PickPile {
+export class PickPile {
 	constructor(cards) {
 		this._upCards = [];
 		this._downCards = cards;
@@ -113,12 +126,36 @@ class PickPile {
 		this._downCards = this._upCards;
 		this._upCards = [];
 	}
+	
+	display() {
+		// use what we already have in css
+	}
 }
 
-class SortedPile {
+export class SortedPile {
 	constructor(suit) {
 		this._cards = [];
-		this._suit = suit;
+		
+		switch (suit) {
+			case 1:
+				this._suit = "spades";
+				break;
+
+			case 2:
+				this._suit = "clubs";
+				break;
+
+			case 3:
+				this._suit = "diamonds";
+				break;
+
+			case 4:
+				this._suit = "hearts";
+				break;
+
+			default:
+				console.log("The suit/color was not set properly! Make sure to use 1 (spades), 2 (clubs), 3 (diamonds), or 4 (hearts) when creating an object.");
+		}
 	}
 
 	pushCard(card) {
@@ -137,14 +174,9 @@ class SortedPile {
 	popCard() {
 		return this._cards.pop();
 	}
-}
-
-let deck = [];
-
-for (let i = 1; i <= 13; i++) {
-	for (let j = 1; j <= 4; j++) {
-		const card = new Card(i, j); // i = rank, j = suit
-		deck.push(card);  // should have 1 "spades" to "hearts", 2 "spades" to "hearts", etc.
+	
+	display(sortedPileSuit) {
+		// use the lanePileNum to show what we already have in css, just use a loop in game.js
 	}
 }
 
